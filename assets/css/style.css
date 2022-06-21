@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right top, #ffffff, #f5fbff, #e6f9fb, #def5ea, #e7eed5);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    width: 650px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.h1__title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.horizontal__row{
+    width: 30%;
+    margin: auto;
+    border: 2px solid sandybrown;
+    margin-bottom: 50px;
+}
+
+.review__container{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.img__container{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto 20px;
+}
+
+.img__container img{
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;  
+}
+
+.img__container::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: sandybrown;
+    top: -5px;
+    right: -11px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.img__container::after{
+    content: '\201D';
+    font-family: "Font Awesome 5 Free";
+    font-size: 55px;
+    font-weight: 1000;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: sandybrown;
+    top: -25px;
+    left: -20px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transform: translateY(57%);
+}
+
+.person__name{
+    text-transform:capitalize;
+    text-align: center;
+    letter-spacing: 2px !important;
+    margin-bottom: 5px;
+}
+
+.person__designation{
+    text-transform: capitalize;
+    text-align: center;
+    color: sandybrown;
+    letter-spacing: 2px !important;
+    font-weight: 800 !important;
+    margin-bottom: 5px;
+}
+
+.person__complement{
+    text-align: justify;
+    margin-bottom: 20px;
+    height: 70px;
+}
+
+.navigation__icon{
+    width: 100px;
+    margin: 0 auto;
+    column-gap: 10px;
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto;
+}
+
+.previous__btn,
+.next__btn{
+    padding: 5px;
+    background-color: sandybrown;
+    border-radius: 75%;
+    text-align: center;
+}
+
+.previous__btn:hover,
+.next__btn:hover{
+    background-color: rgba(244, 165, 96, 0.807);
+    cursor: pointer;
+}
+
+.surprise__btn{
+    text-align: center;
+    display: block;
+    border: 2px solid sandybrown;
+    padding: 8px;
+    border-radius: 10px;
+    width: 150px;
+    margin: 20px auto 10px;
+}
+
+.surprise__btn:hover{
+    border: 2px solid white;
+    background-color: sandybrown;
+    cursor: pointer;
+}
+
